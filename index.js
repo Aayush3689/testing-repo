@@ -2,6 +2,16 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+
+//about page
+app.get('/about', (req, res) => {
+    res.status(200).json({
+        success: true,
+        message: 'About page'
+    })
+})
+
+
 // home page
 app.get('/', (req, res) => {
     res.status(200).json({
